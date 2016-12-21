@@ -96,7 +96,7 @@ class Main extends egret.DisplayObjectContainer {
         var gem3 = new Gem(2);
 
         var sword1 = new Weapon(0);
-        var shield1 = new Protect(0);
+        var shield1 = new Shield(0);
         var head1 = new Head(0);
 
         sword1.addGem(gem1);

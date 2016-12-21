@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,backMap_png,body_png,neck_png,shoulder_png,weapon_png,shield_png,shoes_png,Myhero_png,EquBG_png,hat_png",
+			"keys": "description_json,body_png,weapon_png,EquBG_png,hat_png,Myhero_png,shoes_png",
 			"name": "preload"
 		}
 	],
@@ -12,44 +12,14 @@
 			"url": "config/description.json"
 		},
 		{
-			"name": "backMap_png",
-			"type": "image",
-			"url": "assets/backMap.png"
-		},
-		{
 			"name": "body_png",
 			"type": "image",
 			"url": "assets/body.png"
 		},
 		{
-			"name": "neck_png",
-			"type": "image",
-			"url": "assets/neck.png"
-		},
-		{
-			"name": "shoulder_png",
-			"type": "image",
-			"url": "assets/shoulder.png"
-		},
-		{
 			"name": "weapon_png",
 			"type": "image",
 			"url": "assets/weapon.png"
-		},
-		{
-			"name": "shield_png",
-			"type": "image",
-			"url": "assets/shield.png"
-		},
-		{
-			"name": "shoes_png",
-			"type": "image",
-			"url": "assets/shoes.png"
-		},
-		{
-			"name": "Myhero_png",
-			"type": "image",
-			"url": "assets/Myhero.png"
 		},
 		{
 			"name": "EquBG_png",
@@ -60,6 +30,16 @@
 			"name": "hat_png",
 			"type": "image",
 			"url": "assets/hat.png"
+		},
+		{
+			"name": "Myhero_png",
+			"type": "image",
+			"url": "assets/Myhero.png"
+		},
+		{
+			"name": "shoes_png",
+			"type": "image",
+			"url": "assets/shoes.png"
 		}
 	]
 }

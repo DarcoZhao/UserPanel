@@ -31,16 +31,17 @@ var equipmentBackMapConfig = [
 	{type:equipmentType.HEAD,image:"EquBG_png",x:0,y:200},
 	{type:equipmentType.NECK,image:"EquBG_png",x:0,y:300},
 	{type:equipmentType.SHOULDER,image:"EquBG_png",x:0,y:400},
-	{type:equipmentType.BODY,image:"EquBG_png",x:0,y:500}
+	//{type:equipmentType.BODY,image:"EquBG_png",x:0,y:500}
+	{type:equipmentType.BODY,image:"body_png",x:0,y:500}
 
 ]
 
 var equipmentMapConfig = [
 
 	{configId:"weapon_0",image:"weapon_png"},
-	{configId:"shield_1",image:"shoes_png"},
+	{configId:"shield_0",image:"shoes_png"},
 	{configId:"head_0",image:"hat_png"}
-
+	
 ]
 
 class EquipmentMap {
@@ -182,13 +183,13 @@ class HeroMap {
 
 var heroTextConfig = [
 
-	{name:"  名字:  ",x:0,y:50},
-	{name:"  攻击:  ",x:0,y:100},
-	//{name:"  强健:  ",x:0,y:150},
-	{name:"  敏捷:  ",x:0,y:200},
-	{name:"  智力:  ",x:0,y:250},
-	{name:"  耐力:  ",x:0,y:300},
-	{name:"  战力:  ",x:0,y:350},
+	{name:"  name:  ",x:0,y:50},
+	{name:"  attack:  ",x:0,y:100},
+	{name:"  strength:  ",x:0,y:150},
+	{name:"  agility:  ",x:0,y:200},
+	{name:"  intelligence:  ",x:0,y:250},
+	{name:"  endurance:  ",x:0,y:300},
+	{name:"  fightPower:  ",x:0,y:350},
 
 	{name:"  HP:  ",x:200,y:100},
 	{name:"  MP:  ",x:200,y:150}

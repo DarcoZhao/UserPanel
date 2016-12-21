@@ -1,11 +1,11 @@
-var protectConfig = [
+var shieldConfig = [
 
-	{id:"shield_0",name:"SmallShield",attack:100,strength:110,agility:120,intelligence:130,endurance:140},
-	{id:"shield_1",name:"BigShield",attack:200,strength:210,agility:220,intelligence:230,endurance:240}
+	{id:"shield_0",name:"Shield1",attack:100,strength:110,agility:120,intelligence:130,endurance:140},
+	{id:"shield_1",name:"Shield2",attack:200,strength:210,agility:220,intelligence:230,endurance:240}
 
 ]
 
-class ProtectProperty extends Property{
+class ShieldProperty extends Property{
 
 	public type = equipmentType.SHIELD;
 	public configId:string = "";
@@ -43,18 +43,18 @@ class ProtectProperty extends Property{
 }
 
 
-class Protect extends Equipment{
+class Shield extends Equipment{
 
 	public dirtyFlag:boolean = true;
-	public property:ProtectProperty;
+	public property:ShieldProperty;
 	public gems:Gem[] = [];
 
 	public constructor(type:number) {
 		super();
 
-		this.property = new ProtectProperty(protectConfig[type].id,protectConfig[type].name,protectConfig[type].attack,protectConfig[type].strength,
-									 protectConfig[type].agility,protectConfig[type].intelligence,
-									 protectConfig[type].endurance);
+		this.property = new ShieldProperty(shieldConfig[type].id,shieldConfig[type].name,shieldConfig[type].attack,shieldConfig[type].strength,
+									 shieldConfig[type].agility,shieldConfig[type].intelligence,
+									 shieldConfig[type].endurance);
 
 		
 	}

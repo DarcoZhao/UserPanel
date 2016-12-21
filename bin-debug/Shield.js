@@ -1,10 +1,10 @@
-var protectConfig = [
-    { id: "shield_0", name: "SmallShield", attack: 100, strength: 110, agility: 120, intelligence: 130, endurance: 140 },
-    { id: "shield_1", name: "BigShield", attack: 200, strength: 210, agility: 220, intelligence: 230, endurance: 240 }
+var shieldConfig = [
+    { id: "shield_0", name: "Shield1", attack: 100, strength: 110, agility: 120, intelligence: 130, endurance: 140 },
+    { id: "shield_1", name: "Shield2", attack: 200, strength: 210, agility: 220, intelligence: 230, endurance: 240 }
 ];
-var ProtectProperty = (function (_super) {
-    __extends(ProtectProperty, _super);
-    function ProtectProperty(id, name, attack, strength, agility, intelligence, endurance) {
+var ShieldProperty = (function (_super) {
+    __extends(ShieldProperty, _super);
+    function ShieldProperty(id, name, attack, strength, agility, intelligence, endurance) {
         _super.call(this);
         this.type = equipmentType.SHIELD;
         this.configId = "";
@@ -22,7 +22,7 @@ var ProtectProperty = (function (_super) {
         this.basic_Intelligence = intelligence;
         this.basic_Endurance = endurance;
     }
-    var d = __define,c=ProtectProperty,p=c.prototype;
+    var d = __define,c=ShieldProperty,p=c.prototype;
     d(p, "fightPower"
         ,function () {
             var result = 0;
@@ -31,18 +31,18 @@ var ProtectProperty = (function (_super) {
             return result;
         }
     );
-    return ProtectProperty;
+    return ShieldProperty;
 }(Property));
-egret.registerClass(ProtectProperty,'ProtectProperty');
-var Protect = (function (_super) {
-    __extends(Protect, _super);
-    function Protect(type) {
+egret.registerClass(ShieldProperty,'ShieldProperty');
+var Shield = (function (_super) {
+    __extends(Shield, _super);
+    function Shield(type) {
         _super.call(this);
         this.dirtyFlag = true;
         this.gems = [];
-        this.property = new ProtectProperty(protectConfig[type].id, protectConfig[type].name, protectConfig[type].attack, protectConfig[type].strength, protectConfig[type].agility, protectConfig[type].intelligence, protectConfig[type].endurance);
+        this.property = new ShieldProperty(shieldConfig[type].id, shieldConfig[type].name, shieldConfig[type].attack, shieldConfig[type].strength, shieldConfig[type].agility, shieldConfig[type].intelligence, shieldConfig[type].endurance);
     }
-    var d = __define,c=Protect,p=c.prototype;
+    var d = __define,c=Shield,p=c.prototype;
     p.addGem = function (gem) {
         this.gems.push(gem);
     };
@@ -106,7 +106,7 @@ var Protect = (function (_super) {
             return result;
         }
     );
-    return Protect;
+    return Shield;
 }(Equipment));
-egret.registerClass(Protect,'Protect');
+egret.registerClass(Shield,'Shield');
 //# sourceMappingURL=Shield.js.map
