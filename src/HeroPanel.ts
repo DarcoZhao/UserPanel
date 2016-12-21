@@ -38,7 +38,7 @@ var equipmentBackMapConfig = [
 var equipmentMapConfig = [
 
 	{configId:"weapon_0",image:"weapon_png"},
-	{configId:"shield_0",image:"shoes_png"},
+	{configId:"shield_1",image:"shoes_png"},
 	{configId:"head_0",image:"hat_png"}
 
 ]
